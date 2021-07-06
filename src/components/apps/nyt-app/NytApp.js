@@ -20,7 +20,7 @@ const NytApp = () => {
         .then(res => res.json())
         .then(data => setResults(data.response.docs))
         .catch(err => console.log(err))
-    };
+    }; console.log(results);
     
     const handleSubmit = (event) => {
         event.preventDefault();
